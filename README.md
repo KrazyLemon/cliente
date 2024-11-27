@@ -1,8 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Plataforma Generadora de Horarios
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La Plataforma Generadora de Horarios es una aplicación web diseñada para gestionar y generar horarios académicos. Permite a los usuarios seleccionar grupos, ver detalles de los docentes, materias por semestre, y generar horarios personalizados.
+
+## Características
+
+- **Selección de Grupos**: Permite seleccionar grupos desde una base de datos.
+- **Detalles de Docentes**: Muestra información detallada de los docentes.
+- **Materias por Semestre**: Visualiza las materias correspondientes a cada semestre.
+- **Generación de Horarios**: Genera horarios personalizados basados en la selección de grupos y materias.
+
+## Tecnologías Utilizadas
+
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Base de Datos**: MongoDB
+- **Otros**: Axios para las peticiones HTTP
+
+## Instalación
+
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/plataforma-generadora-de-horarios.git
