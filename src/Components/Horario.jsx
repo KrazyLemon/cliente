@@ -1,234 +1,88 @@
 export default function Horario() {
-  const horario = [
-    {
-      grupo_id: "G0001",
-      horario: [
-        {
-          dia: "Lunes",
-          horas: [
-            {
-              hora: "07:00",
-              Asignacion_id: "A0001",
-            },
-            {
-              hora: "08:00",
-              Asignacion_id: "A0002",
-            },
-            {
-              hora: "09:00",
-              Asignacion_id: "A0003",
-            },
-            {
-              hora: "10:00",
-              Asignacion_id: "A0004",
-            },
-            {
-              hora: "11:00",
-              Asignacion_id: "A0005",
-            },
-            {
-              hora: "12:00",
-              Asignacion_id: "A0006",
-            },
-            {
-              hora: "13:00",
-              Asignacion_id: "A0007",
-            },
-            {
-              hora: "14:00",
-              Asignacion_id: "A0008",
-            },
-          ],
-        },
-        {
-          dia: "Martes",
-          horas: [
-            {
-              hora: "07:00",
-              Asignacion_id: "A0001",
-            },
-            {
-              hora: "08:00",
-              Asignacion_id: "A0002",
-            },
-            {
-              hora: "09:00",
-              Asignacion_id: "A0003",
-            },
-            {
-              hora: "10:00",
-              Asignacion_id: "A0004",
-            },
-            {
-              hora: "11:00",
-              Asignacion_id: "A0005",
-            },
-            {
-              hora: "12:00",
-              Asignacion_id: "A0006",
-            },
-            {
-              hora: "13:00",
-              Asignacion_id: "A0007",
-            },
-            {
-              hora: "14:00",
-              Asignacion_id: "A0008",
-            },
-          ],
-        },
-        {
-          dia: "Miercoles",
-          horas: [
-            {
-              hora: "07:00",
-              Asignacion_id: "A0001",
-            },
-            {
-              hora: "08:00",
-              Asignacion_id: "A0002",
-            },
-            {
-              hora: "09:00",
-              Asignacion_id: "A0003",
-            },
-            {
-              hora: "10:00",
-              Asignacion_id: "A0004",
-            },
-            {
-              hora: "11:00",
-              Asignacion_id: "A0005",
-            },
-            {
-              hora: "12:00",
-              Asignacion_id: "A0006",
-            },
-            {
-              hora: "13:00",
-              Asignacion_id: "A0007",
-            },
-            {
-              hora: "14:00",
-              Asignacion_id: "A0008",
-            },
-          ],
-        },
-        {
-          dia: "Jueves",
-          horas: [
-            {
-              hora: "07:00",
-              Asignacion_id: "A0001",
-            },
-            {
-              hora: "08:00",
-              Asignacion_id: "A0002",
-            },
-            {
-              hora: "09:00",
-              Asignacion_id: "A0003",
-            },
-            {
-              hora: "10:00",
-              Asignacion_id: "A0004",
-            },
-            {
-              hora: "11:00",
-              Asignacion_id: "A0005",
-            },
-            {
-              hora: "12:00",
-              Asignacion_id: "A0006",
-            },
-            {
-              hora: "13:00",
-              Asignacion_id: "A0007",
-            },
-            {
-              hora: "14:00",
-              Asignacion_id: "A0008",
-            },
-          ],
-        },
-        {
-          dia: "Viernes",
-          horas: [
-            {
-              hora: "07:00",
-              Asignacion_id: "A0001",
-            },
-            {
-              hora: "08:00",
-              Asignacion_id: "A0002",
-            },
-            {
-              hora: "09:00",
-              Asignacion_id: "A0003",
-            },
-            {
-              hora: "10:00",
-              Asignacion_id: "A0004",
-            },
-            {
-              hora: "11:00",
-              Asignacion_id: "A0005",
-            },
-            {
-              hora: "12:00",
-              Asignacion_id: "A0006",
-            },
-            {
-              hora: "13:00",
-              Asignacion_id: "A0007",
-            },
-            {
-              hora: "14:00",
-              Asignacion_id: "A0008",
-            },
-          ],
-        },
-      ],
-    },
-  ];
 
   return (
-    <>
-      <div className="flex m-auto w-11/12">
-        <div className="h-96 w-full">
-          <table className="table-auto bg-white rounded-md border-2 w-full">
-            <thead>
-              <tr className="bg-cyan-500 text-white">
-                <th className="border px-2 py-1">Hora</th>
-                <th className="border px-2 py-1">7:00</th>
-                <th className="border px-2 py-1">8:00</th>
-                <th className="border px-2 py-1">9:00</th>
-                <th className="border px-2 py-1">10:00</th>
-                <th className="border px-2 py-1">11:00</th>
-                <th className="border px-2 py-1">12:00</th>
-                <th className="border px-2 py-1">13:00</th>
-                <th className="border px-2 py-1">14:00</th>
-              </tr>
-            </thead>
-            <tbody>
-              {horario[0].horario.map((dia) => {
-                return (
-                  <tr key={dia.dia}>
-                    <td className="border px-2 py-1">{dia.dia}</td>
-                    {dia.horas.map((hora) => {
-                      return (
-                        <td key={hora.hora} className="border px-2 py-1">
-                          {hora.Asignacion_id}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
+    <div className="flex w-5/6 flex-col">
+      <h2 className="w-full flex justify-center font-bold">
+        Horario
+      </h2>
+      <table className="table-auto w-full">
+        <thead className="bg-amber-400 text-white">
+          <tr>
+            <th className="px-4 py-2">Hora</th>
+            <th className="px-4 py-2">Lunes</th>
+            <th className="px-4 py-2">Martes</th>
+            <th className="px-4 py-2">Miércoles</th>
+            <th className="px-4 py-2">Jueves</th>
+            <th className="px-4 py-2">Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="text-sm border px-1 py-1">7:00 - 8:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">8:00 - 9:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">9:00 - 10:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">10:00 - 11:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">11:00 - 12:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">12:00 - 13:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">13:00 - 14:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+          <tr>
+            <td className="text-sm border px-1 py-1">14:00 - 15:00</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia </td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+            <td className="text-sm border px-1 py-1">Materia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   );
 }

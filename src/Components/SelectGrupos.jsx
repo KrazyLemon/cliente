@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-export default function SelectGrupos({ handleSelect }) {
+export default function SelectGrupos({ handleSelect, disabled }) {
   const [grupos, setGrupos] = useState([]);
 
   useEffect(() => {
@@ -17,10 +17,15 @@ export default function SelectGrupos({ handleSelect }) {
     fetchData();
   }, []);
 
+  const setColor = (disabled) => {
+    return disabled ? "border-red-300" : "border-green-300";
+  }
+
   return (
     <>
       <select
-        className="border-2 border-gray-300 rounded-md p-2"
+      disabled={disabled}
+        className={`${setColor(disabled)} border-2 rounded-md p-2`}
         onChange={(e) =>
           handleSelect(grupos.find((grupo) => grupo.grupoId === e.target.value))
         }
