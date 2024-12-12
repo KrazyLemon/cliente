@@ -1,0 +1,22 @@
+{
+    "content" : [
+        {
+            "asignacion" : "1",
+            "doncente_id" : "1",
+            "horas" : "2",
+            "horario" :[[1,2,3,4,5],[1,2,3,4,5]]
+        },
+        {
+            "asignacion" : "2",
+            "doncente_id" : "2",
+            "horas" : "2",
+            "horario" :[[1,2,3,4,5],[1,2,3,4,5]]
+        },
+        {
+            "asignacion" : "1",
+            "doncente_id" : "1",
+            "horas" : "2",
+            "horario" :[[1,2,3,4,5],[1,2,3,4,5]]
+        }
+    ]
+}

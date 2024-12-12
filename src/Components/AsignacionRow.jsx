@@ -12,7 +12,7 @@ export default function AsignacionRow({ id }) {
         `http://localhost:8090/api/v1/asignaciones/${id}`
       );
       setAsignacion(response.data);
-      console.log(asignacion);
+      //console.log(asignacion);
     } catch (err) {
       setError(err.toString());
     }
